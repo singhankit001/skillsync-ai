@@ -1,2 +1,3 @@
 - 2026-02-25T00:10:00: Initial Next.js setup with Tailwind CSS
 - 2026-02-26T00:10:00: Configure ESLint and Prettier
+- 2026-02-27T00:10:00: Add Inter font and base global styles
