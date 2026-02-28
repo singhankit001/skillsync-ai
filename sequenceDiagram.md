@@ -1,48 +1,179 @@
-# Sequence Diagram
+# SkillSync.ai - Sequence Diagrams
+
+This document outlines the core data flows and interactions within the SkillSync.ai platform using Mermaid sequence diagrams.
+
+## 1. User Registration / Login Flow
 
 ```mermaid
 sequenceDiagram
-    actor Student
-    participant Frontend as React App
-    participant Controller as Application Controller
-    participant Service as Recommendation Service
-    participant Repo as Application Repository
-    participant DB as MongoDB
+    participant User
+    participant Frontend
+    participant BackendAPI
+    participant AuthService
+    participant Database
 
-    %% Login Workflow
-    Student->>Frontend: Submit Login Credentials
-    Frontend->>Controller: POST /api/auth/login
-    Controller->>Service: Validate & Generate Token
-    Service->>DB: Query User Record Validate
-    DB-->>Service: Validated User
-    Service-->>Controller: Return JWT
-    Controller-->>Frontend: 200 OK (Token attached)
+    User->>Frontend: Enters credentials (Email, Password)
+    Frontend->>BackendAPI: POST /api/auth/register (or login)
+    BackendAPI->>AuthService: Validate input & hash password
+    AuthService->>Database: Save User / Verify credentials
+    Database-->>AuthService: User record
+    AuthService->>AuthService: Generate JWT Token
+    AuthService-->>BackendAPI: Return User & Token
+    BackendAPI-->>Frontend: 200 OK (Token + User Data)
+    Frontend-->>User: Redirect to Dashboard
+```
 
-    %% Browse / Recommendations
-    Student->>Frontend: Request AI Recommendations
-    Frontend->>Controller: GET /api/internships/recommended
-    Controller->>Service: Extract user skills (from JWT/DB)
-    Service->>Repo: Fetch internships matching skills
-    Repo->>DB: Aggregation pipelined query
-    DB-->>Repo: Matches Result Set
-    Repo-->>Service: Returning matching internships
-    Service-->>Controller: JSON Data List
-    Controller-->>Frontend: 200 OK + Data
-    Frontend-->>Student: Renders Internship Cards
+## 2. Career Analysis Flow
 
-    %% Application Workflow
-    Student->>Frontend: Click "Apply" on matching internship
-    Frontend->>Controller: POST /api/applications (Internship ID)
-    Controller->>Service: Initiate application process
-    Service->>Repo: Verify duplicate application
-    Repo->>DB: Filter checking existing entry
-    DB-->>Repo: Not found (valid applying)
-    Repo-->>Service: Proceed mapped application
-    Service->>Repo: storeApplication(payload)
-    Repo->>DB: INSERT into Applications collection
-    DB-->>Repo: Inserted ACK
-    Repo-->>Service: Document ID
-    Service-->>Controller: Success True
-    Controller-->>Frontend: 201 Created (Application sent)
-    Frontend-->>Student: Display Success Modal
+```mermaid
+sequenceDiagram
+    participant User
+    participant Frontend
+    participant BackendAPI
+    participant CareerService
+    participant AIEngine
+    participant Database
+
+    User->>Frontend: Submits profile & career goals
+    Frontend->>BackendAPI: POST /api/career/analyze
+    BackendAPI->>CareerService: Process user data
+    CareerService->>AIEngine: Request career analysis with context prompt
+    AIEngine-->>CareerService: Structured JSON analysis (scores, missing skills)
+    CareerService->>Database: Save CareerAnalysis record
+    Database-->>CareerService: Confirmation
+    CareerService-->>BackendAPI: Formatted response
+    BackendAPI-->>Frontend: 200 OK (Analysis Data)
+    Frontend-->>User: Display Career Dashboard & Readiness Score
+```
+
+## 3. Skill Gap Analysis Flow
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant Frontend
+    participant BackendAPI
+    participant SkillService
+    participant AIEngine
+
+    User->>Frontend: Views Skill Analyzer page
+    Frontend->>BackendAPI: GET /api/skills/suggestions
+    BackendAPI->>SkillService: Fetch user skills & target role
+    SkillService->>AIEngine: Request skill gap mapping
+    AIEngine-->>SkillService: Return prioritized learning path
+    SkillService-->>BackendAPI: Structured skill response
+    BackendAPI-->>Frontend: 200 OK (Skill Gaps & Paths)
+    Frontend-->>User: Display prioritized skills to acquire
+```
+
+## 4. Project Suggestion Flow
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant Frontend
+    participant BackendAPI
+    participant ProjectService
+    participant Database
+
+    User->>Frontend: Requests project ideas for "AI Intern"
+    Frontend->>BackendAPI: POST /api/projects/suggest
+    BackendAPI->>ProjectService: Validate request
+    ProjectService->>Database: Fetch or generate projects based on role & level
+    Database-->>ProjectService: Project list
+    ProjectService-->>BackendAPI: Return project suggestions
+    BackendAPI-->>Frontend: 200 OK (Projects with descriptions & tech stack)
+    Frontend-->>User: Display Project Cards
+```
+
+## 5. AI Chatbot Flow
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant Frontend
+    participant BackendAPI
+    participant ChatService
+    participant Database
+    participant AIEngine
+
+    User->>Frontend: Sends message to SkillSync Mentor
+    Frontend->>BackendAPI: POST /api/chat/message
+    BackendAPI->>ChatService: Extract message & user ID
+    ChatService->>Database: Fetch user context (skills, roadmap)
+    Database-->>ChatService: User context data
+    ChatService->>AIEngine: Send prompt + context + user message
+    AIEngine-->>ChatService: AI Response
+    ChatService->>Database: Save ChatMessage record
+    Database-->>ChatService: Saved
+    ChatService-->>BackendAPI: Return AI Response
+    BackendAPI-->>Frontend: 200 OK (Message Data)
+    Frontend-->>User: Display response in Chat Window
+```
+
+## 6. Roadmap Generation Flow
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant Frontend
+    participant BackendAPI
+    participant RoadmapService
+    participant AIEngine
+    participant Database
+
+    User->>Frontend: Clicks "Generate Roadmap"
+    Frontend->>BackendAPI: POST /api/roadmap/generate
+    BackendAPI->>RoadmapService: Initiate roadmap creation
+    RoadmapService->>AIEngine: Prompt for 30/60/90 day plan based on skill gaps
+    AIEngine-->>RoadmapService: Structured timeline & tasks
+    RoadmapService->>Database: Save Roadmap record
+    Database-->>RoadmapService: Confirmation
+    RoadmapService-->>BackendAPI: Formatted roadmap
+    BackendAPI-->>Frontend: 200 OK (Roadmap Data)
+    Frontend-->>User: Display interactive timeline
+```
+
+## 7. Job Recommendation Flow
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant Frontend
+    participant BackendAPI
+    participant JobService
+    participant Database
+
+    User->>Frontend: Navigates to Jobs Page
+    Frontend->>BackendAPI: GET /api/jobs/recommendations
+    BackendAPI->>JobService: Fetch user skills
+    JobService->>Database: Query matching jobs
+    Database-->>JobService: Raw job list
+    JobService->>JobService: Calculate match percentage
+    JobService-->>BackendAPI: Ranked job recommendations
+    BackendAPI-->>Frontend: 200 OK (Job List)
+    Frontend-->>User: Display job cards with match scores
+```
+
+## 8. Resume Analysis Flow
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant Frontend
+    participant BackendAPI
+    participant ResumeService
+    participant AIEngine
+    participant Database
+
+    User->>Frontend: Uploads Resume / Submits details
+    Frontend->>BackendAPI: POST /api/resume/analyze
+    BackendAPI->>ResumeService: Parse resume data
+    ResumeService->>AIEngine: Request ATS analysis & improvement tips
+    AIEngine-->>ResumeService: Resume score, missing keywords, bullet improvements
+    ResumeService->>Database: Save ResumeAnalysis record
+    Database-->>ResumeService: Confirmation
+    ResumeService-->>BackendAPI: Structured report
+    BackendAPI-->>Frontend: 200 OK (Analysis Report)
+    Frontend-->>User: Display strengths, weaknesses, and optimization tips
 ```

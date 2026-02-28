@@ -2,3 +2,4 @@
 - 2026-02-26T00:10:00: Configure ESLint and Prettier
 - 2026-02-27T00:10:00: Add Inter font and base global styles
 - 2026-02-28T00:10:00: Set up Mongoose and MongoDB connection
+- 2026-03-01T00:10:00: Create User model and authentication schema
