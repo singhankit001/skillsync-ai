@@ -4,3 +4,4 @@
 - 2026-02-28T00:10:00: Set up Mongoose and MongoDB connection
 - 2026-03-01T00:10:00: Create User model and authentication schema
 - 2026-03-02T00:10:00: Implement JWT based authentication
+- 2026-03-03T00:10:00: Add Express backend server setup
