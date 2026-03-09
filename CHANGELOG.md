@@ -11,3 +11,4 @@
 - 2026-03-07T00:10:00: Implement responsive Topbar with search input
 - 2026-03-08T00:10:00: Add Lucide react icons for navigation
 - 2026-03-09T00:10:00: Create basic Career Score component
+- 2026-03-10T00:10:00: Draft IDEA.md with product vision
