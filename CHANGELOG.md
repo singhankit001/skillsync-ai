@@ -14,3 +14,4 @@
 - 2026-03-10T00:10:00: Draft IDEA.md with product vision
 - 2026-03-11T00:10:00: Create Sequence diagrams for core features
 - 2026-03-12T00:10:00: Implement Career AI Orchestrator service
+- 2026-03-13T00:10:00: Add Job model and recommendation endpoints
