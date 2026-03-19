@@ -21,3 +21,4 @@
 - 2026-03-17T00:10:00: Implement Resume Analysis backend logic
 - 2026-03-18T00:10:00: Create Chat model and service for AI mentor
 - 2026-03-19T00:10:00: Fix MongoDB deprecated options warning
+- 2026-03-20T00:10:00: Update Next.js config to disable experimental compiler
