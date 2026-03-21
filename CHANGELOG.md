@@ -23,3 +23,4 @@
 - 2026-03-19T00:10:00: Fix MongoDB deprecated options warning
 - 2026-03-20T00:10:00: Update Next.js config to disable experimental compiler
 - 2026-03-21T00:10:00: Install next-themes for dark mode support
+- 2026-03-22T00:10:00: Refactor globals.css to use Tailwind v4 CSS variables
