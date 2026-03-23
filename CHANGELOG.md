@@ -25,3 +25,4 @@
 - 2026-03-21T00:10:00: Install next-themes for dark mode support
 - 2026-03-22T00:10:00: Refactor globals.css to use Tailwind v4 CSS variables
 - 2026-03-23T00:10:00: Implement ThemeProvider for seamless light/dark mode
+- 2026-03-24T00:10:00: Enhance Sidebar with Next.js Link routing
