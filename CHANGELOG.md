@@ -26,3 +26,4 @@
 - 2026-03-22T00:10:00: Refactor globals.css to use Tailwind v4 CSS variables
 - 2026-03-23T00:10:00: Implement ThemeProvider for seamless light/dark mode
 - 2026-03-24T00:10:00: Enhance Sidebar with Next.js Link routing
+- 2026-03-25T00:10:00: Add active state animations to sidebar navigation
