@@ -27,3 +27,4 @@
 - 2026-03-23T00:10:00: Implement ThemeProvider for seamless light/dark mode
 - 2026-03-24T00:10:00: Enhance Sidebar with Next.js Link routing
 - 2026-03-25T00:10:00: Add active state animations to sidebar navigation
+- 2026-03-26T00:10:00: Redesign Career Score card with glassmorphism

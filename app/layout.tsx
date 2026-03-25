@@ -1,7 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-
+import { ThemeProvider } from "@/components/theme-provider";
+import { Toaster } from "sonner";
+import { Chatbot } from "@/components/chatbot";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -25,9 +27,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-background">
-      <body className={`${inter.variable} font-sans antialiased`}>
-        {children}
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${inter.variable} font-sans antialiased text-foreground bg-background transition-colors duration-300`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+          <Toaster richColors position="top-center" theme="system" />
+          <Chatbot />
+        </ThemeProvider>
       </body>
     </html>
   );
