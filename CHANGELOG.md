@@ -30,3 +30,4 @@
 - 2026-03-26T00:10:00: Redesign Career Score card with glassmorphism
 - 2026-03-27T00:10:00: Implement SVG circular progress ring for readiness score
 - 2026-03-28T00:10:00: Add Sonner for toast notifications
+- 2026-03-29T00:10:00: Enhance Topbar with theme toggle and user dropdown
