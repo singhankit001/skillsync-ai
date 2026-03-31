@@ -33,3 +33,4 @@
 - 2026-03-29T00:10:00: Enhance Topbar with theme toggle and user dropdown
 - 2026-03-30T00:10:00: Create interactive Job Recommendations cards
 - 2026-03-31T00:10:00: Redesign Skill Gap component with priority tags
+- 2026-04-01T00:10:00: Implement animated AI Insights badge
