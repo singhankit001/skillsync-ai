@@ -10,7 +10,7 @@ flowchart LR
     end
 
     %% System
-    subgraph "AI Internship Platform"
+    subgraph "SkillSync AI Platform"
         UC1([Register / Login])
         UC2([Manage Profile & Skills])
         UC3([Get Recommend Internships])

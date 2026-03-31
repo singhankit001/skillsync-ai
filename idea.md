@@ -1,4 +1,4 @@
-# AI Powered Internship & Project Matching Platform
+# SkillSync AI - Internship & Project Matching Platform
 
 ## Problem Statement
 Students often struggle to find internships and projects that match their skills and interests. Recruiters also struggle to discover suitable candidates quickly.
