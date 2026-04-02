@@ -35,3 +35,4 @@
 - 2026-03-31T00:10:00: Redesign Skill Gap component with priority tags
 - 2026-04-01T00:10:00: Implement animated AI Insights badge
 - 2026-04-02T00:10:00: Create placeholder pages for jobs, skills, and projects
+- 2026-04-03T00:10:00: Add routing placeholders for resume and interview prep
