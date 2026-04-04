@@ -1,60 +1,25 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Briefcase,
-  MapPin,
-  DollarSign,
-  Bookmark,
-  ExternalLink,
-  ChevronRight,
-} from "lucide-react";
-import { cn } from "@/lib/utils";
+import { Briefcase, Building2, MapPin, ExternalLink, Zap } from "lucide-react";
+import { toast } from "sonner";
 
 const jobs = [
   {
     id: 1,
+    role: "Frontend Engineer Intern",
     company: "Razorpay",
-    logo: "R",
-    logoColor: "from-blue-500 to-indigo-600",
-    role: "Frontend Intern",
-    location: "Bangalore",
-    salary: "40-50k/month",
+    location: "Bengaluru (Hybrid)",
     matchScore: 92,
-    tags: ["React", "TypeScript", "Tailwind"],
+    type: "Internship",
   },
   {
     id: 2,
-    company: "Zoho",
-    logo: "Z",
-    logoColor: "from-red-500 to-orange-500",
-    role: "AI/ML Intern",
-    location: "Chennai",
-    salary: "35-45k/month",
-    matchScore: 85,
-    tags: ["Python", "TensorFlow", "NLP"],
-  },
-  {
-    id: 3,
-    company: "Swiggy",
-    logo: "S",
-    logoColor: "from-orange-500 to-amber-500",
-    role: "SDE Intern",
+    role: "React Developer",
+    company: "Cred",
     location: "Remote",
-    salary: "45-55k/month",
-    matchScore: 78,
-    tags: ["Node.js", "MongoDB", "AWS"],
-  },
-  {
-    id: 4,
-    company: "Flipkart",
-    logo: "F",
-    logoColor: "from-yellow-500 to-amber-500",
-    role: "Backend Intern",
-    location: "Bangalore",
-    salary: "50-60k/month",
-    matchScore: 72,
-    tags: ["Java", "Spring", "MySQL"],
+    matchScore: 85,
+    type: "Full-time",
   },
 ];
 
@@ -63,108 +28,72 @@ export function JobRecommendations() {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: 0.2 }}
-      className="space-y-4"
+      transition={{ duration: 0.6, delay: 0.4 }}
+      className="glass-panel glass-card-hover p-6 md:p-8 relative overflow-hidden flex flex-col h-full"
     >
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-purple-500/10">
-            <Briefcase className="h-5 w-5 text-purple-400" />
+          <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500/20 to-cyan-500/20 border border-blue-500/20">
+            <Briefcase className="h-6 w-6 text-blue-500 dark:text-cyan-400" />
           </div>
           <div>
-            <h3 className="font-semibold text-foreground">
-              Job Recommendations
-            </h3>
-            <p className="text-sm text-muted-foreground">
-              Matched to your profile
+            <h3 className="text-xl font-bold text-foreground">Top Job Matches</h3>
+            <p className="text-sm text-muted-foreground font-medium">
+              Curated by AI based on your skill profile
             </p>
           </div>
         </div>
-        <button className="flex items-center gap-1 text-sm text-indigo-400 hover:text-indigo-300 transition-colors">
+        <motion.button 
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={() => toast("Opening full job board...")}
+          className="text-sm font-semibold text-primary hover:text-primary/80 transition-colors"
+        >
           View all
-          <ChevronRight className="h-4 w-4" />
-        </button>
+        </motion.button>
       </div>
 
-      {/* Horizontal scroll container */}
-      <div className="relative -mx-4 md:-mx-6 lg:-mx-8 px-4 md:px-6 lg:px-8">
-        <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide">
+      <div className="flex-1 overflow-x-auto scrollbar-hide -mx-2 px-2 pb-2">
+        <div className="flex gap-4 h-full">
           {jobs.map((job, index) => (
             <motion.div
               key={job.id}
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: index * 0.1 }}
-              whileHover={{ scale: 1.02, y: -4 }}
-              className="flex-shrink-0 w-72 snap-start glass-card p-5 cursor-pointer group hover:border-indigo-500/50 transition-all"
+              transition={{ delay: 0.5 + index * 0.1 }}
+              whileHover={{ y: -4, scale: 1.01 }}
+              className="min-w-[280px] md:min-w-[320px] flex-1 flex flex-col rounded-2xl bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 p-5 group transition-all"
             >
-              {/* Header */}
-              <div className="flex items-start justify-between mb-4">
-                <div className="flex items-center gap-3">
-                  <div
-                    className={cn(
-                      "h-12 w-12 rounded-xl bg-gradient-to-br flex items-center justify-center text-white font-bold text-lg",
-                      job.logoColor
-                    )}
-                  >
-                    {job.logo}
+              <div className="flex justify-between items-start mb-4">
+                <div>
+                  <h4 className="font-bold text-foreground text-lg">{job.role}</h4>
+                  <div className="flex items-center gap-2 mt-1.5 text-muted-foreground text-sm">
+                    <Building2 className="h-4 w-4" />
+                    <span className="font-medium">{job.company}</span>
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground">
-                      {job.role}
-                    </h4>
-                    <p className="text-sm text-muted-foreground">
-                      {job.company}
-                    </p>
+                  <div className="flex items-center gap-2 mt-1 text-muted-foreground text-sm">
+                    <MapPin className="h-4 w-4" />
+                    <span>{job.location}</span>
                   </div>
                 </div>
-                <button className="p-2 rounded-lg hover:bg-white/5 text-muted-foreground hover:text-foreground transition-colors">
-                  <Bookmark className="h-4 w-4" />
-                </button>
-              </div>
-
-              {/* Details */}
-              <div className="space-y-2 mb-4">
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <MapPin className="h-4 w-4" />
-                  {job.location}
-                </div>
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <DollarSign className="h-4 w-4" />
-                  {job.salary}
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-black/5 dark:bg-white/5 font-bold text-primary border border-primary/20 shadow-inner">
+                  {job.matchScore}%
                 </div>
               </div>
-
-              {/* Tags */}
-              <div className="flex flex-wrap gap-1.5 mb-4">
-                {job.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="px-2 py-0.5 rounded-md bg-white/5 text-xs text-muted-foreground"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-
-              {/* Footer */}
-              <div className="flex items-center justify-between pt-4 border-t border-white/5">
-                <div
-                  className={cn(
-                    "px-3 py-1 rounded-full text-sm font-medium",
-                    job.matchScore >= 85
-                      ? "bg-emerald-500/10 text-emerald-400 border border-emerald-500/20"
-                      : job.matchScore >= 75
-                      ? "bg-amber-500/10 text-amber-400 border border-amber-500/20"
-                      : "bg-blue-500/10 text-blue-400 border border-blue-500/20"
-                  )}
+              
+              <div className="mt-auto pt-4 flex items-center justify-between border-t border-black/5 dark:border-white/5">
+                <span className="px-3 py-1 rounded-md bg-black/5 dark:bg-white/5 text-xs font-semibold text-muted-foreground border border-black/5 dark:border-white/5">
+                  {job.type}
+                </span>
+                <motion.button 
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  onClick={() => toast.success(`Application drafted for ${job.company}!`)}
+                  className="flex items-center gap-1.5 text-sm font-bold text-primary hover:text-primary/80 transition-colors"
                 >
-                  {job.matchScore}% Match
-                </div>
-                <button className="flex items-center gap-1 text-sm text-indigo-400 hover:text-indigo-300 transition-colors opacity-0 group-hover:opacity-100">
-                  Apply
-                  <ExternalLink className="h-3.5 w-3.5" />
-                </button>
+                  <Zap className="h-4 w-4" />
+                  Quick Apply
+                </motion.button>
               </div>
             </motion.div>
           ))}

@@ -37,3 +37,4 @@
 - 2026-04-02T00:10:00: Create placeholder pages for jobs, skills, and projects
 - 2026-04-03T00:10:00: Add routing placeholders for resume and interview prep
 - 2026-04-04T00:10:00: Implement Interview Prep UI with interactive actions
+- 2026-04-05T00:10:00: Add saved items dashboard component
