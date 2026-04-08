@@ -41,3 +41,4 @@
 - 2026-04-06T00:10:00: Create Settings page with theme and profile controls
 - 2026-04-07T00:10:00: Design floating Chatbot UI component
 - 2026-04-08T00:10:00: Implement smart local fallback logic for Chatbot
+- 2026-04-09T00:10:00: Add typing indicators and suggested prompts to AI mentor
