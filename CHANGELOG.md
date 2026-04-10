@@ -43,3 +43,4 @@
 - 2026-04-08T00:10:00: Implement smart local fallback logic for Chatbot
 - 2026-04-09T00:10:00: Add typing indicators and suggested prompts to AI mentor
 - 2026-04-10T00:10:00: Wire up dashboard buttons to trigger Chatbot via custom events
+- 2026-04-11T00:10:00: Refactor layout to include global Chatbot and Toaster
