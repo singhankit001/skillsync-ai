@@ -46,3 +46,4 @@
 - 2026-04-11T00:10:00: Refactor layout to include global Chatbot and Toaster
 - 2026-04-12T00:10:00: Fix responsive layout issues on mobile devices
 - 2026-04-13T00:10:00: Polish typography and glassmorphism hover states
+- 2026-04-14T00:10:00: Audit and fix all dead links across the dashboard
