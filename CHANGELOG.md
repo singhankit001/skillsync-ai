@@ -22,6 +22,11 @@ All notable changes to this project will be documented in this file.
 - Standardized API service layer with environment-based routing.
 - Switched to `pnpm` for optimized dependency management.
 
+### 🧹 Deployment & Hygiene
+- **Cleanup Audit**: Identified and isolated the primary production Vercel project (`skillsync-ai-d4m8`).
+- **GitHub Integration**: Resolved rendering conflicts and fixed broken Mermaid diagrams.
+- **Visual Finalization**: Integrated high-fidelity dashboard design into the repository's public preview.
+
 ---
 
-<sub>Last Updated: 2026-05-01</sub>
+<sub>Last Updated: 2026-05-02</sub>
