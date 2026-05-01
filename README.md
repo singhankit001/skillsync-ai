@@ -3,15 +3,13 @@
 <img src="https://img.shields.io/badge/SkillSync.ai-Elite--AI--Platform-8B5CF6?style=for-the-badge&logo=ai" alt="Logo" />
 
 # 🌌 SkillSync.ai
-### The AI Operating System for Modern Engineering Careers
+### A unified operating system for your engineering career growth.
 
 [![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg?style=flat-square)](https://github.com/your-username/skillsync-ai)
-[![Next.js](https://img.shields.io/badge/Framework-Next.js%2014-black.svg?style=flat-square&logo=next.js)](https://nextjs.org/)
-[![Node.js](https://img.shields.io/badge/Backend-Node.js-green.svg?style=flat-square&logo=node.js)](https://nodejs.org/)
+[![Next.js](https://img.shields.io/badge/Framework-Next.js%2015-black.svg?style=flat-square&logo=next.js)](https://nextjs.org/)
 [![Status](https://img.shields.io/badge/Status-Production--Ready-emerald.svg?style=flat-square)](https://github.com/your-username/skillsync-ai)
-[![License](https://img.shields.io/badge/License-MIT-gray.svg?style=flat-square)](https://github.com/your-username/skillsync-ai/blob/main/LICENSE)
 
-**Architecting the path from student to elite engineer with context-aware AI.**
+**Stop juggling fragmented job boards and resume builders. Start building your career with a data-driven AI co-pilot.**
 
 [Explore Demo](#) • [View Roadmap](#neural-roadmaps) • [Documentation](#-api-architecture) • [Report Bug](https://github.com/your-username/skillsync-ai/issues)
 
@@ -19,12 +17,12 @@
 
 ---
 
-## 💎 The Premium Experience
+## 💎 The Experience
 
-SkillSync.ai is a high-fidelity ecosystem that replaces fragmented career tools with a unified, cinematic interface. Designed for $100B-tier startup aesthetics and production-grade reliability.
+SkillSync.ai isn't just another career tool. It’s a high-fidelity ecosystem designed to bridge the gap between being a student and becoming an elite engineer. We’ve combined world-class design with context-aware AI to create a seamless path for your professional growth.
 
 <details open>
-<summary><b>🚀 Core Intelligence Modules</b> (Click to collapse)</summary>
+<summary><b>🚀 Intelligence Modules</b> (Click to collapse)</summary>
 
 <br />
 
@@ -33,35 +31,35 @@ SkillSync.ai is a high-fidelity ecosystem that replaces fragmented career tools 
   <tr>
     <td width="33%" align="center">
       <img src="https://img.shields.io/badge/AI-Mentor-violet?style=for-the-badge&logo=robot" /><br />
-      <b>Intent-Aware Coach</b><br />
-      Context-aware mentor that understands your entire profile.
+      <b>Smart Career Coach</b><br />
+      A mentor that actually knows your skills and where you want to go.
     </td>
     <td width="33%" align="center">
       <img src="https://img.shields.io/badge/Neural-Roadmaps-blue?style=for-the-badge&logo=target" /><br />
-      <b>Strategic Execution</b><br />
-      AI-generated 30/60/90 day plans tailored to your pace.
+      <b>Actionable Roadmaps</b><br />
+      Personalized 30/60/90 day plans that evolve as you learn.
     </td>
     <td width="33%" align="center">
       <img src="https://img.shields.io/badge/Resume-Architect-emerald?style=for-the-badge&logo=read-the-docs" /><br />
-      <b>ATS Optimization</b><br />
-      Role-specific keyword targeting and impact analysis.
+      <b>ATS Optimizer</b><br />
+      Impact analysis and role-specific keyword targeting for your resume.
     </td>
   </tr>
   <tr>
     <td width="33%" align="center">
       <img src="https://img.shields.io/badge/Skill-Intelligence-amber?style=for-the-badge&logo=brain" /><br />
-      <b>Gap Analysis</b><br />
-      Real-time market mapping to identify your next best skill.
+      <b>Market Gap Analysis</b><br />
+      Real-time mapping of your current arsenal against industry demand.
     </td>
     <td width="33%" align="center">
       <img src="https://img.shields.io/badge/Match-Scores-cyan?style=for-the-badge&logo=statuspage" /><br />
-      <b>Job Discovery</b><br />
-      See exactly why you fit a role and how to bridge the gap.
+      <b>Smart Job Matching</b><br />
+      See exactly why you're a fit for a role and what you're missing.
     </td>
     <td width="33%" align="center">
       <img src="https://img.shields.io/badge/Project-Blueprints-rose?style=for-the-badge&logo=stackblitz" /><br />
-      <b>Resume Builders</b><br />
-      High-value project ideas with full tech-stack blueprints.
+      <b>Portfolio Builders</b><br />
+      High-value project ideas with step-by-step technical blueprints.
     </td>
   </tr>
 </table>
@@ -79,10 +77,10 @@ Crafted with the most modern and performant technologies in the ecosystem.
   <img src="https://skillicons.dev/icons?i=nextjs,tailwind,framer,nodejs,express,mongodb,typescript,postman,git,github" />
 </p>
 
-- **Frontend:** Next.js 14 (App Router), Framer Motion, Vanilla CSS (Design Tokens)
+- **Frontend:** Next.js 15 (App Router), Framer Motion, Vanilla CSS
 - **Backend:** Node.js (Express), Mongoose (ODM)
-- **Intelligence:** OpenAI/LLM Orchestration, Intent-Based Routing
-- **Security:** Stateless JWT Authentication, Sanitized API Layers
+- **Intelligence:** LLM Orchestration & Intent Analysis
+- **Security:** Stateless JWT Authentication & Sanitized API Layers
 
 ---
 
@@ -110,36 +108,17 @@ graph LR
 
 ---
 
-## 📡 API Architecture
+## 🚀 Deployment
 
-<details>
-<summary><b>📂 View Technical API Endpoints</b></summary>
+SkillSync.ai is optimized for zero-config deployment on **Vercel**.
 
-<br />
+### ☁️ Vercel Deployment Steps
 
-| Category | Endpoint | Method | Response |
-| :--- | :--- | :--- | :--- |
-| **Identity** | `/api/auth/register` | `POST` | `JWT_TOKEN` |
-| **Intelligence** | `/api/career/analyze` | `GET` | `CAREER_SCORE_DATA` |
-| **Strategy** | `/api/roadmap/generate` | `POST` | `NEURAL_ROADMAP_JSON` |
-| **Analysis** | `/api/resume/analyze` | `POST` | `ATS_INSIGHTS` |
-| **Mentorship** | `/api/chat/message` | `POST` | `INTENT_AWARE_REPLY` |
-
-</details>
-
----
-
-## 🛣️ Neural Roadmaps
-
-SkillSync.ai visualizes your path as a dynamic neural sequence.
-
-```text
-[PHASE 1: Foundation] ----( 30 Days )----> [PHASE 2: Project Build] ----( 60 Days )----> [PHASE 3: Role Mastery]
-      |                                           |                                           |
-      v                                           v                                           v
-   Skill Gaps Identified                   Blueprint Execution                       Mock Interviews
-   Resume Scored                           Architecture Design                       Job Matching
-```
+1. **Push to GitHub**: Ensure all changes are committed and pushed.
+2. **Import Project**: Go to [Vercel Dashboard](https://vercel.com/new) and import the repository.
+3. **Environment Variables**: Add the following in the Vercel project settings:
+   - `NEXT_PUBLIC_API_URL`: Your backend URL (e.g., `https://api.skillsync.ai/api`)
+4. **Deploy**: Click "Deploy". Vercel will auto-detect the Next.js framework.
 
 ---
 
@@ -158,31 +137,12 @@ SkillSync.ai visualizes your path as a dynamic neural sequence.
    npm install
    ```
 
-3. **Environment Setup**
-   ```bash
-   # .env
-   PORT=5000
-   MONGO_URI=your_uri
-   JWT_SECRET=your_secret
-   AI_API_KEY=your_key
-   ```
-
-4. **Launch Application**
+3. **Launch Application**
    ```bash
    npm run dev
    ```
 
 </details>
-
----
-
-## 🎓 SESD Excellence Checklist
-
-- [x] **Cinematic UI/UX:** HSL-based semantic tokens with zero banding.
-- [x] **Elite AI Integration:** Intent-aware mentor with structured synthesis.
-- [x] **Full-Stack Robustness:** Error-resilient Node.js/Express architecture.
-- [x] **Scalable Design:** Stateless authentication and modular service layers.
-- [x] **Documentation:** Production-grade technical and product vision files.
 
 ---
 
