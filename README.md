@@ -1,19 +1,19 @@
 <div align="center">
 
-<img src="https://img.shields.io/badge/CareerOS-Elite--AI--Platform-8B5CF6?style=for-the-badge&logo=ai" alt="Logo" />
+<img src="https://img.shields.io/badge/SkillSync.ai-Elite--AI--Platform-8B5CF6?style=for-the-badge&logo=ai" alt="Logo" />
 
-# 🌌 CareerOS
+# 🌌 SkillSync.ai
 ### The AI Operating System for Modern Engineering Careers
 
-[![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg?style=flat-square)](https://github.com/your-username/careeros)
+[![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg?style=flat-square)](https://github.com/your-username/skillsync-ai)
 [![Next.js](https://img.shields.io/badge/Framework-Next.js%2014-black.svg?style=flat-square&logo=next.js)](https://nextjs.org/)
 [![Node.js](https://img.shields.io/badge/Backend-Node.js-green.svg?style=flat-square&logo=node.js)](https://nodejs.org/)
-[![Status](https://img.shields.io/badge/Status-Production--Ready-emerald.svg?style=flat-square)](https://github.com/your-username/careeros)
-[![License](https://img.shields.io/badge/License-MIT-gray.svg?style=flat-square)](https://github.com/your-username/careeros/blob/main/LICENSE)
+[![Status](https://img.shields.io/badge/Status-Production--Ready-emerald.svg?style=flat-square)](https://github.com/your-username/skillsync-ai)
+[![License](https://img.shields.io/badge/License-MIT-gray.svg?style=flat-square)](https://github.com/your-username/skillsync-ai/blob/main/LICENSE)
 
 **Architecting the path from student to elite engineer with context-aware AI.**
 
-[Explore Demo](#) • [View Roadmap](#neural-roadmaps) • [Documentation](#-api-architecture) • [Report Bug](https://github.com/your-username/careeros/issues)
+[Explore Demo](#) • [View Roadmap](#neural-roadmaps) • [Documentation](#-api-architecture) • [Report Bug](https://github.com/your-username/skillsync-ai/issues)
 
 </div>
 
@@ -21,7 +21,7 @@
 
 ## 💎 The Premium Experience
 
-CareerOS is a high-fidelity ecosystem that replaces fragmented career tools with a unified, cinematic interface. Designed for $100B-tier startup aesthetics and production-grade reliability.
+SkillSync.ai is a high-fidelity ecosystem that replaces fragmented career tools with a unified, cinematic interface. Designed for $100B-tier startup aesthetics and production-grade reliability.
 
 <details open>
 <summary><b>🚀 Core Intelligence Modules</b> (Click to collapse)</summary>
@@ -88,7 +88,7 @@ Crafted with the most modern and performant technologies in the ecosystem.
 
 ## 🏗️ System Design
 
-> "Simplicity is the ultimate sophistication." — CareerOS Architecture
+> "Simplicity is the ultimate sophistication." — SkillSync.ai Architecture
 
 ```mermaid
 graph LR
@@ -131,7 +131,7 @@ graph LR
 
 ## 🛣️ Neural Roadmaps
 
-CareerOS visualizes your path as a dynamic neural sequence.
+SkillSync.ai visualizes your path as a dynamic neural sequence.
 
 ```text
 [PHASE 1: Foundation] ----( 30 Days )----> [PHASE 2: Project Build] ----( 60 Days )----> [PHASE 3: Role Mastery]
@@ -150,7 +150,7 @@ CareerOS visualizes your path as a dynamic neural sequence.
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/careeros.git
+   git clone https://github.com/your-username/skillsync-ai.git
    ```
 
 2. **Install Dependencies**
@@ -190,8 +190,8 @@ CareerOS visualizes your path as a dynamic neural sequence.
 
 ### Built for the next generation of engineers.
 
-[Follow on Twitter](#) • [Join Discord](#) • [Support CareerOS](#)
+[Follow on Twitter](#) • [Join Discord](#) • [Support SkillSync.ai](#)
 
-<sub>&copy; 2026 CareerOS AI Platform. All rights reserved.</sub>
+<sub>&copy; 2026 SkillSync.ai AI Platform. All rights reserved.</sub>
 
 </div>

@@ -1,7 +1,7 @@
-# IDEA.md — CareerOS
+# IDEA.md — SkillSync.ai
 
 ## 1. Project Overview
-**CareerOS** is a premium, AI-native career intelligence platform designed to replace the fragmented "job board and resume builder" workflow with a unified **Operating System** for career growth. It utilizes advanced LLM orchestration to provide students and graduates with a data-driven career co-pilot that manages their skills, projects, and job discovery through a single, cinematic interface.
+**SkillSync.ai** is a premium, AI-native career intelligence platform designed to replace the fragmented "job board and resume builder" workflow with a unified **Operating System** for career growth. It utilizes advanced LLM orchestration to provide students and graduates with a data-driven career co-pilot that manages their skills, projects, and job discovery through a single, cinematic interface.
 
 ---
 
@@ -15,7 +15,7 @@ In the current professional landscape, students face a "Cold Start" problem:
 ---
 
 ## 3. The Solution
-CareerOS bridges these gaps by providing:
+SkillSync.ai bridges these gaps by providing:
 -   **Context-Aware AI Mentor:** A chatbot that knows your profile, skills, and goals. It doesn't just answer; it advises.
 -   **Skill Intelligence Engine:** A real-time analysis of market trends mapped against the user’s current "Arsenal" to identify "Priority Targets."
 -   **Neural Roadmaps:** Dynamically generated 30/60/90-day execution plans that adapt as the user grows.
@@ -26,13 +26,13 @@ CareerOS bridges these gaps by providing:
 ## 4. System Design Thinking
 
 ### Architecture
-CareerOS follows a **Stateless Service Architecture** to ensure scalability:
+SkillSync.ai follows a **Stateless Service Architecture** to ensure scalability:
 -   **Frontend:** A high-performance Next.js application leveraging Server-Side Rendering (SSR) for initial loads and a robust Client-Side Design System for fluid interactions.
 -   **Backend:** A Node.js/Express layer that acts as an **API Orchestrator**, handling complex logic transitions between the Database and the AI Engine.
 -   **Data Layer:** MongoDB is utilized for its schema flexibility, allowing user profiles to evolve as new career data points are added.
 
 ### AI Orchestration
-Rather than simple wrapper calls, CareerOS uses **Intent-Based Routing**:
+Rather than simple wrapper calls, SkillSync.ai uses **Intent-Based Routing**:
 1.  User input is analyzed for intent (e.g., "Review Resume" vs. "Suggest Project").
 2.  The system injects **Profile Context** into the prompt.
 3.  The LLM returns **Structured Data** (JSON), which the frontend renders as interactive UI components (Charts, Cards, Roadmaps).
@@ -51,7 +51,7 @@ Rather than simple wrapper calls, CareerOS uses **Intent-Based Routing**:
 ## 6. Innovation Points (The SESD Edge)
 -   **Premium Design System:** Moving beyond basic components to a cinematic, $100B startup aesthetic with zero color banding and premium noise textures.
 -   **Holistic Data Integration:** The "Career Score" is a composite metric derived from technical skills, project value, and resume health—not just a single data point.
--   **Actionable Intelligence:** Unlike most AI tools that give "text advice," CareerOS generates **interactive widgets** and **step-by-step tasks**.
+-   **Actionable Intelligence:** Unlike most AI tools that give "text advice," SkillSync.ai generates **interactive widgets** and **step-by-step tasks**.
 
 ---
 
@@ -63,7 +63,7 @@ Rather than simple wrapper calls, CareerOS uses **Intent-Based Routing**:
 ---
 
 ## 8. Learning Outcomes
-Developing CareerOS has resulted in mastery over:
+Developing SkillSync.ai has resulted in mastery over:
 -   **Full-Stack Reactivity:** Building complex dashboards with Framer Motion and Next.js.
 -   **AI Strategy:** Designing structured prompts and handling asynchronous AI streams.
 -   **Database Architecture:** Modeling evolving professional profiles in MongoDB.
@@ -71,4 +71,4 @@ Developing CareerOS has resulted in mastery over:
 
 ---
 
-**CareerOS — Architecting the Future of Professional Growth.**
+**SkillSync.ai — Architecting the Future of Professional Growth.**
