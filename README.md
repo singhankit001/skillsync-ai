@@ -18,9 +18,9 @@
 ---
 
 <p align="center">
-  <img src="./assets/skillsync-preview.png" alt="SkillSync.ai Interface" width="100%" onerror="this.src='https://raw.githubusercontent.com/singhankit001/skillsync-ai/main/public/preview.png'; this.onerror=null;" />
+  <img src="https://raw.githubusercontent.com/singhankit001/skillsync-ai/main/public/preview.png" alt="SkillSync.ai Interface" width="100%" />
   <br />
-  <em>Replace this with a high-resolution dashboard walkthrough or cinematic GIF.</em>
+  <em>Real-time Skill Gap Analysis & AI Career Mentorship Dashboard</em>
 </p>
 
 </div>
@@ -76,7 +76,7 @@ graph TD
     Dashboard --> Auth{Auth Guard}
     Auth --> Profile[(User Profile Context)]
     
-    subgraph Intelligence Layer
+    subgraph Intelligence["Intelligence Layer"]
         Profile --> Gap[Skill Gap Analysis]
         Profile --> Match[Job/Internship Matching]
         Profile --> Idea[Project Blueprinting]
@@ -87,10 +87,9 @@ graph TD
     Roadmap --> Insights[Actionable Insights]
     
     Insights --> User
-    
+
     style User fill:#8B5CF6,stroke:#fff,stroke-width:2px,color:#fff
     style Insights fill:#10B981,stroke:#fff,stroke-width:2px,color:#fff
-    style Intelligence Layer fill:rgba(139, 92, 246, 0.05),stroke:#8B5CF6,stroke-dasharray: 5 5
 ```
 
 ---
