@@ -110,15 +110,47 @@ graph LR
 
 ## 🚀 Deployment
 
-SkillSync.ai is optimized for zero-config deployment on **Vercel**.
+SkillSync.ai is built for a smooth, production-ready deployment on **Vercel** with support for environment variables, API configuration, serverless routes, and fast global delivery.
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Deploy-Vercel-black?style=for-the-badge&logo=vercel" />
+  <img src="https://img.shields.io/badge/Framework-Next.js-000000?style=for-the-badge&logo=nextdotjs" />
+  <img src="https://img.shields.io/badge/Package%20Manager-pnpm-F69220?style=for-the-badge&logo=pnpm" />
+  <img src="https://img.shields.io/badge/Production-Ready-22C55E?style=for-the-badge" />
+</p>
 
 ### ☁️ Vercel Deployment Steps
 
-1. **Push to GitHub**: Ensure all changes are committed and pushed.
-2. **Import Project**: Go to [Vercel Dashboard](https://vercel.com/new) and import the repository.
-3. **Environment Variables**: Add the following in the Vercel project settings:
-   - `NEXT_PUBLIC_API_URL`: Your backend URL (e.g., `https://api.skillsync.ai/api`)
-4. **Deploy**: Click "Deploy". Vercel will auto-detect the Next.js framework.
+Follow these steps to deploy SkillSync.ai without build issues:
+
+| Step | Action | Description |
+|---|---|---|
+| **1** | Push to GitHub | Commit and push the latest stable code to the `main` branch. |
+| **2** | Import Project | Open the **Vercel Dashboard** and import the GitHub repository. |
+| **3** | Framework Detection | Vercel should automatically detect the project as **Next.js**. |
+| **4** | Install Dependencies | Vercel will use `pnpm` if `pnpm-lock.yaml` exists. |
+| **5** | Add Environment Variables | Add all required production variables inside Vercel settings. |
+| **6** | Deploy | Click **Deploy** and wait for the production build to complete. |
+
+### ⚙️ Recommended Vercel Settings
+
+| Setting | Value |
+|---|---|
+| **Framework Preset** | `Next.js` |
+| **Build Command** | `pnpm run build` |
+| **Install Command** | `pnpm install` |
+| **Development Command** | `pnpm dev` |
+| **Output Directory** | Auto-detected by Vercel |
+| **Root Directory** | `./` |
+
+### 🔐 Environment Variables
+
+Add these variables inside:
+`Vercel → Project → Settings → Environment Variables`
+
+| Variable | Example Value | Description |
+|---|---|---|
+| `NEXT_PUBLIC_API_URL` | `https://api.skillsync.ai/api` | The base URL for the backend API. |
 
 ---
 
