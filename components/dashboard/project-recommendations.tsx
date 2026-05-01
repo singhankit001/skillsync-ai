@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FolderKanban, CheckCircle, Github, ExternalLink } from "lucide-react";
+import { FolderKanban, CheckCircle, Code2, ExternalLink } from "lucide-react";
 import { toast } from "sonner";
 
 const projects = [
