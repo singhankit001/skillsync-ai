@@ -29,14 +29,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} font-sans antialiased text-foreground bg-background transition-colors duration-300`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProvider>
           {children}
-          <Toaster richColors position="top-center" theme="system" />
+          <Toaster richColors position="top-center" />
           <Chatbot />
         </ThemeProvider>
       </body>
