@@ -1,189 +1,142 @@
 <div align="center">
 
-<img src="https://img.shields.io/badge/SkillSync.ai-Elite--AI--Platform-8B5CF6?style=for-the-badge&logo=ai" alt="Logo" />
+<img src="https://img.shields.io/badge/SkillSync.ai-Elite--AI--Platform-8B5CF6?style=for-the-badge&logo=ai" alt="SkillSync.ai Logo" />
 
 # 🌌 SkillSync.ai
-### A unified operating system for your engineering career growth.
+### Your AI Operating System for Skills, Projects, Internships & Career Growth
 
-[![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg?style=flat-square)](https://github.com/your-username/skillsync-ai)
-[![Next.js](https://img.shields.io/badge/Framework-Next.js%2015-black.svg?style=flat-square&logo=next.js)](https://nextjs.org/)
-[![Status](https://img.shields.io/badge/Status-Production--Ready-emerald.svg?style=flat-square)](https://github.com/your-username/skillsync-ai)
+**A precision-engineered career platform helping students bridge the gap between education and high-impact industry roles through intelligent guidance.**
 
-**Stop juggling fragmented job boards and resume builders. Start building your career with a data-driven AI co-pilot.**
-
-[Explore Demo](#) • [View Roadmap](#neural-roadmaps) • [Documentation](#-api-architecture) • [Report Bug](https://github.com/your-username/skillsync-ai/issues)
-
-</div>
-
----
-
-## 💎 The Experience
-
-SkillSync.ai isn't just another career tool. It’s a high-fidelity ecosystem designed to bridge the gap between being a student and becoming an elite engineer. We’ve combined world-class design with context-aware AI to create a seamless path for your professional growth.
-
-<details open>
-<summary><b>🚀 Intelligence Modules</b> (Click to collapse)</summary>
-
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
 <br />
+[![GitHub Stars](https://img.shields.io/github/stars/singhankit001/skillsync-ai?style=flat-square&color=8B5CF6)](https://github.com/singhankit001/skillsync-ai/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/singhankit001/skillsync-ai?style=flat-square&color=8B5CF6)](https://github.com/singhankit001/skillsync-ai/network/members)
+[![License](https://img.shields.io/github/license/singhankit001/skillsync-ai?style=flat-square&color=8B5CF6)](https://github.com/singhankit001/skillsync-ai/blob/main/LICENSE)
 
-<div align="center">
-<table width="100%">
-  <tr>
-    <td width="33%" align="center">
-      <img src="https://img.shields.io/badge/AI-Mentor-violet?style=for-the-badge&logo=robot" /><br />
-      <b>Smart Career Coach</b><br />
-      A mentor that actually knows your skills and where you want to go.
-    </td>
-    <td width="33%" align="center">
-      <img src="https://img.shields.io/badge/Neural-Roadmaps-blue?style=for-the-badge&logo=target" /><br />
-      <b>Actionable Roadmaps</b><br />
-      Personalized 30/60/90 day plans that evolve as you learn.
-    </td>
-    <td width="33%" align="center">
-      <img src="https://img.shields.io/badge/Resume-Architect-emerald?style=for-the-badge&logo=read-the-docs" /><br />
-      <b>ATS Optimizer</b><br />
-      Impact analysis and role-specific keyword targeting for your resume.
-    </td>
-  </tr>
-  <tr>
-    <td width="33%" align="center">
-      <img src="https://img.shields.io/badge/Skill-Intelligence-amber?style=for-the-badge&logo=brain" /><br />
-      <b>Market Gap Analysis</b><br />
-      Real-time mapping of your current arsenal against industry demand.
-    </td>
-    <td width="33%" align="center">
-      <img src="https://img.shields.io/badge/Match-Scores-cyan?style=for-the-badge&logo=statuspage" /><br />
-      <b>Smart Job Matching</b><br />
-      See exactly why you're a fit for a role and what you're missing.
-    </td>
-    <td width="33%" align="center">
-      <img src="https://img.shields.io/badge/Project-Blueprints-rose?style=for-the-badge&logo=stackblitz" /><br />
-      <b>Portfolio Builders</b><br />
-      High-value project ideas with step-by-step technical blueprints.
-    </td>
-  </tr>
-</table>
+[**Live Demo**](https://skillsync-ai-d4m8.vercel.app) • [**Repository**](https://github.com/singhankit001/skillsync-ai) • [**Documentation**](#-system-architecture) • [**Report Bug**](https://github.com/singhankit001/skillsync-ai/issues)
+
 </div>
 
-</details>
-
 ---
-
-## 🛠️ The Tech Stack
-
-Crafted with the most modern and performant technologies in the ecosystem.
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=nextjs,tailwind,framer,nodejs,express,mongodb,typescript,postman,git,github" />
+  <!-- Replace this with your real project screenshot or demo GIF. -->
+  <img src="./assets/skillsync-preview.png" alt="SkillSync.ai Preview" width="100%" onerror="this.src='https://raw.githubusercontent.com/singhankit001/skillsync-ai/main/public/preview.png'; this.onerror=null;" />
 </p>
 
-- **Frontend:** Next.js 15 (App Router), Framer Motion, Vanilla CSS
-- **Backend:** Node.js (Express), Mongoose (ODM)
-- **Intelligence:** LLM Orchestration & Intent Analysis
-- **Security:** Stateless JWT Authentication & Sanitized API Layers
+## 💎 Product Overview
+
+SkillSync.ai is a comprehensive AI ecosystem designed to navigate the complexities of the modern technical landscape. Instead of searching through fragmented resources, students gain access to a unified workspace that analyzes their unique profile to deliver high-fidelity career paths.
+
+- **Strategic Career Discovery**: Data-driven matching for internships and full-time roles.
+- **Intelligent Gap Analysis**: Real-time identification of missing technical and soft skills.
+- **Dynamic Learning Roadmaps**: Personalized 30/60/90 day execution plans.
+- **Project Blueprinting**: AI-generated project ideas with full technical implementation guides.
+- **ATS-Ready Optimization**: Neural analysis of resumes and professional profiles.
+- **Interview Intelligence**: Context-aware preparation modules for technical and behavioral rounds.
 
 ---
 
-## 🏗️ System Design
+## 🎯 Why SkillSync.ai?
 
-> "Simplicity is the ultimate sophistication." — SkillSync.ai Architecture
+The transition from academia to industry is often obscured by a "cold start" problem. Students frequently find themselves asking:
+- *Which skills actually matter in the current market?*
+- *Which projects will differentiate my portfolio?*
+- *How do I prepare for a role I haven't held yet?*
+
+SkillSync.ai solves this by consolidating market intelligence, skill assessment, and personalized mentorship into a single, high-fidelity experience. We transform ambiguous career paths into clear, executable roadmaps.
+
+---
+
+## 🚀 Key Features
+
+| Feature | Description | Status |
+| :--- | :--- | :--- |
+| **AI Career Dashboard** | A centralized hub for all career metrics and insights. | ✅ Live |
+| **Internship & Job Discovery** | Intent-aware matching with major tech company openings. | ✅ Live |
+| **Skill Gap Analyzer** | Deep-dive analysis of your current stack vs industry requirements. | ✅ Live |
+| **Personalized Roadmaps** | Dynamic, time-bound learning sequences with curated resources. | ✅ Live |
+| **AI Project Generator** | Unique project blueprints based on your career goals. | ✅ Live |
+| **Resume Architect** | Neural keyword optimization and impact analysis. | ✅ Live |
+| **Interview Mentor** | Context-aware technical and behavioral prep sessions. | ✅ Live |
+| **Progress Tracking** | Visual analytics to monitor your growth over time. | ✅ Live |
+| **Deployment Engine** | Full production-ready configuration for Vercel. | ✅ Live |
+
+---
+
+## 🛠️ Technical Architecture
+
+SkillSync.ai is built on a modern, modular stack designed for scalability and performance.
+
+### **Frontend Infrastructure**
+- **Framework**: [Next.js 15+](https://nextjs.org/) (App Router)
+- **State & Logic**: [React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Motion**: [Framer Motion](https://www.framer.com/motion/)
+
+### **AI & Intelligence Layer**
+- **Orchestration**: LLM-native recommendation engine.
+- **Context Handling**: Intent-based routing for personalized insights.
+- **API Strategy**: Stateless, secure communication layers.
+
+### **Deployment & DevOps**
+- **Platform**: [Vercel](https://vercel.com/)
+- **CI/CD**: GitHub Actions-ready.
+- **Runtime**: Node.js Production Environment.
+
+---
+
+## 🏗️ System Flow
 
 ```mermaid
-graph LR
-    subgraph Client
-    A[Dashboard UI] --> B[Framer Motion Engine]
-    B --> C[Service API Layer]
-    end
-    
-    subgraph Server
-    C --> D[Express Orchestrator]
-    D --> E[Auth Guard]
-    E --> F[AI Core Engine]
-    D --> G[(MongoDB)]
-    end
-    
-    F -.->|JSON Synthesis| D
-    G -.->|Profile Context| F
+flowchart TD
+    A[Student] --> B[SkillSync.ai Dashboard]
+    B --> C[AI Career Engine]
+    C --> D[Skill Gap Analysis]
+    C --> E[Internship & Job Matching]
+    C --> F[Project Idea Generator]
+    C --> G[Learning Roadmap]
+    D --> H[Personalized Recommendations]
+    E --> H
+    F --> H
+    G --> H
+    H --> I[Career Growth Plan]
 ```
 
 ---
 
-## 🚀 Deployment
+## 📦 Getting Started
 
-SkillSync.ai is built for a smooth, production-ready deployment on **Vercel** with support for environment variables, API configuration, serverless routes, and fast global delivery.
+### **Environment Setup**
+Ensure you have the required environment variables configured in your `.env.local` or Vercel dashboard:
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Deploy-Vercel-black?style=for-the-badge&logo=vercel" />
-  <img src="https://img.shields.io/badge/Framework-Next.js-000000?style=for-the-badge&logo=nextdotjs" />
-  <img src="https://img.shields.io/badge/Package%20Manager-pnpm-F69220?style=for-the-badge&logo=pnpm" />
-  <img src="https://img.shields.io/badge/Production-Ready-22C55E?style=for-the-badge" />
-</p>
+```txt
+NEXT_PUBLIC_API_URL=https://your-api-endpoint.com/api
+```
 
-### ☁️ Vercel Deployment Steps
+### **Installation**
+```bash
+# Clone the repository
+git clone https://github.com/singhankit001/skillsync-ai.git
 
-Follow these steps to deploy SkillSync.ai without build issues:
+# Install dependencies
+pnpm install
 
-| Step | Action | Description |
-|---|---|---|
-| **1** | Push to GitHub | Commit and push the latest stable code to the `main` branch. |
-| **2** | Import Project | Open the **Vercel Dashboard** and import the GitHub repository. |
-| **3** | Framework Detection | Vercel should automatically detect the project as **Next.js**. |
-| **4** | Install Dependencies | Vercel will use `pnpm` if `pnpm-lock.yaml` exists. |
-| **5** | Add Environment Variables | Add all required production variables inside Vercel settings. |
-| **6** | Deploy | Click **Deploy** and wait for the production build to complete. |
-
-### ⚙️ Recommended Vercel Settings
-
-| Setting | Value |
-|---|---|
-| **Framework Preset** | `Next.js` |
-| **Build Command** | `pnpm run build` |
-| **Install Command** | `pnpm install` |
-| **Development Command** | `pnpm dev` |
-| **Output Directory** | Auto-detected by Vercel |
-| **Root Directory** | `./` |
-
-### 🔐 Environment Variables
-
-Add these variables inside:
-`Vercel → Project → Settings → Environment Variables`
-
-| Variable | Example Value | Description |
-|---|---|---|
-| `NEXT_PUBLIC_API_URL` | `https://api.skillsync.ai/api` | The base URL for the backend API. |
-
----
-
-## 📦 Quick Start
-
-<details>
-<summary><b>🛠️ Installation Guide</b></summary>
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/skillsync-ai.git
-   ```
-
-2. **Install Dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Launch Application**
-   ```bash
-   npm run dev
-   ```
-
-</details>
+# Start the development server
+pnpm dev
+```
 
 ---
 
 <div align="center">
 
-### Built for the next generation of engineers.
+### Built for the next generation of world-class engineers.
 
-[Follow on Twitter](#) • [Join Discord](#) • [Support SkillSync.ai](#)
+[**Follow Development**](#) • [**Join Discord**](#) • [**Support Platform**](#)
 
-<sub>&copy; 2026 SkillSync.ai AI Platform. All rights reserved.</sub>
+<sub>&copy; 2026 SkillSync.ai Platform. All rights reserved.</sub>
 
 </div>
